@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="form">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">M</span>
+          <div>
+            <h1>MahasiswaHub</h1>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Dashboard</a>
+          <a href="data.html">Data Mahasiswa</a>
+          <a class="active" href="form.html">Tambah Data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Form Data</p>
+            <h2 id="formTitle">Tambah Mahasiswa</h2>
+          </div>
+          <a class="secondary-btn" href="data.html">Kembali</a>
+        </div>
+
+        <form id="studentForm" novalidate>
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="nama">Nama Mahasiswa</label>
+              <input id="nama" name="nama" type="text" placeholder="Masukkan nama" />
+            </div>
+
+            <div class="input-group">
+              <label for="nim">NIM</label>
+              <input id="nim" name="nim" type="text" placeholder="Contoh: 221001" />
+            </div>
+
+            <div class="input-group">
+              <label for="prodi">Program Studi</label>
+              <input id="prodi" name="prodi" type="text" placeholder="Contoh: Informatika" />
+            </div>
+
+            <div class="input-group">
+              <label for="semester">Semester</label>
+              <input id="semester" name="semester" type="number" min="1" max="14" placeholder="Contoh: 4" />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="primary-btn">Simpan Data</button>
+            <button type="button" id="resetBtn" class="secondary-btn">Reset</button>
+          </div>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

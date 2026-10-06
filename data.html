@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="data">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">M</span>
+          <div>
+            <h1>MahasiswaHub</h1>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Dashboard</a>
+          <a class="active" href="data.html">Data Mahasiswa</a>
+          <a href="form.html">Tambah Data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Kelola Data</p>
+            <h2>Daftar Mahasiswa</h2>
+          </div>
+          <a class="primary-btn" href="form.html">Tambah Baru</a>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-box" for="searchInput">
+            <span>Cari:</span>
+            <input id="searchInput" type="search" placeholder="Cari nama, NIM, atau prodi" />
+          </label>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Prodi</th>
+                <th>Semester</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+          </table>
+        </div>
+
+        <p id="tableMessage" class="table-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

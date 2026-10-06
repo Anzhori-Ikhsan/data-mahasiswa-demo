@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="dashboard">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">M</span>
+          <div>
+            <h1>MahasiswaHub</h1>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="active" href="index.html">Dashboard</a>
+          <a href="data.html">Data Mahasiswa</a>
+          <a href="form.html">Tambah Data</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Sistem Informasi Akademik</p>
+          <h2>Kelola data mahasiswa dengan cepat dan rapi</h2>
+          <p>
+            Aplikasi ini membantu Anda mencatat, mencari, memperbarui, dan
+            menghapus data mahasiswa tanpa proses manual yang rumit.
+          </p>
+        </div>
+        <a class="primary-btn" href="form.html">Tambah Mahasiswa</a>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card accent-blue">
+          <span class="stat-label">Total Mahasiswa</span>
+          <strong id="totalMahasiswa">0</strong>
+        </article>
+        <article class="stat-card accent-green">
+          <span class="stat-label">Program Studi</span>
+          <strong id="totalProdi">0</strong>
+        </article>
+        <article class="stat-card accent-gold">
+          <span class="stat-label">Semester Rata-rata</span>
+          <strong id="avgSemester">0</strong>
+        </article>
+        <article class="stat-card accent-red">
+          <span class="stat-label">Mahasiswa Aktif</span>
+          <strong id="totalAktif">0</strong>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h3>Data Mahasiswa Terbaru</h3>
+          <a href="data.html">Lihat semua</a>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Prodi</th>
+                <th>Semester</th>
+              </tr>
+            </thead>
+            <tbody id="recentTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
